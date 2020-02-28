@@ -42,3 +42,31 @@ Processing by ApplicationController#hello as HTML
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-02-28 13:28:58 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-28 13:28:59 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-28 13:29:00 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-28 15:03:29 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.6ms)
+Completed 200 OK in 22ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
