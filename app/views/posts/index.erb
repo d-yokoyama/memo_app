@@ -1,0 +1,12 @@
+<body>
+  <%= link_to("新規作成", "/") %>
+  <div class="post_container">
+    <div>
+      <% @posts.each do |post| %>
+        <div id="post_index">
+          <%= post.content %>      
+        </div>
+      <% end %>
+    </div>
+  </div>
+</body>
