@@ -4004,3 +4004,38 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 409ms (Views: 353.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/posts/7/show" for ::1 at 2020-03-07 21:24:53 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:11
+  Rendering posts/show.erb within layouts/application
+  Rendered posts/show.erb within layouts/application (31.2ms)
+Completed 200 OK in 3525ms (Views: 3344.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2020-03-07 21:25:05 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 168ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-08 07:13:02 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (13.7ms)
+Completed 200 OK in 287ms (Views: 148.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-08 07:18:09 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (0.7ms)
+Completed 200 OK in 1152ms (Views: 1082.5ms | ActiveRecord: 0.0ms)
+
+
