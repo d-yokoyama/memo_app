@@ -1,0 +1,8 @@
+<body>
+  <%= link_to("新規作成", "/posts/create") %>
+  <div class="show_container">
+    <div>
+      <textarea class="show_content" name="name" rows="8" cols="80"  spellcheck="false"><%= @post.content %></textarea>
+    </div>
+  </div>
+</body>

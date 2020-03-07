@@ -11,3 +11,20 @@
   padding: 1em;
   border: 1px solid rgb(208, 163, 76);
 }
+
+.show_container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.show_content {
+  margin-top: 200px;
+  background-color: #fff;
+  width: 100%;
+  padding: 1em;
+  height: 300px;
+  font-size: 1.4em;
+  border: 1px solid rgb(208, 163, 76);
+  outline: none;
+  resize: none;
+}
