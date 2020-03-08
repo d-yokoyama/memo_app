@@ -7,9 +7,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
 
   <body>
+    <header>
+      <div class="headre_left">
+      </div>
+      <div class="header_right">
+        <li><%= link_to("新規作成", "/posts/create") %></li>
+        <li><%= link_to("メモ一覧", "/posts/index") %></li>
+        <li><%= link_to("トップ", "/") %></li>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
