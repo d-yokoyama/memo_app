@@ -26,3 +26,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
+  url: <%= ENV['postgres://atpeoplooszqhh:3c087090c1ad4c74f136dc50cd390fe4bd18a5ca89748eb3f4157818760417a9@ec2-34-235-108-68.compute-1.amazonaws.com:5432/dcitd62fj7hfio'] %>
