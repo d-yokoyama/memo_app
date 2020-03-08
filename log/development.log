@@ -4523,3 +4523,21 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 729ms (Views: 584.2ms | ActiveRecord: 10.1ms)
 
 
+Started GET "/" for ::1 at 2020-03-08 18:15:11 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.9ms)
+Completed 200 OK in 2757ms (Views: 2671.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-08 18:15:18 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (33.3ms)
+Completed 200 OK in 469ms (Views: 356.4ms | ActiveRecord: 4.5ms)
+
+
