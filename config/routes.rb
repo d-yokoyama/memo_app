@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post "posts/create" => "posts#create"
   get "posts/:id/show" => "posts#show"
   get "posts/create" => "home#top"
+  post "posts/:id/update" => "posts#update"
 end

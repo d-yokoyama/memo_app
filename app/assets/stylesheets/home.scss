@@ -37,7 +37,6 @@ input {
 }
 
 form input[type="submit"] {
-  border: none;
   cursor: pointer;
 }
 
@@ -79,7 +78,6 @@ form input[type="submit"] {
 }
 
 input {
-  background-color: #3d9478;
   color: #fff;
   font-size: 1.5em;
   border-radius: 5px;
@@ -90,4 +88,9 @@ body {
   margin-bottom: 100px;
   background-color: #faeee7;
   margin: 0;
+  padding-bottom: 600px;
+}
+
+#create_post {
+  background-color: #3d9478;
 }
