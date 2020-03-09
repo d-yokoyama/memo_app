@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+header {
+  background-color: #d0a34c;
+}
+
+.header_inner {
+  width: 90%;
+  margin: auto;
+}
+
+.header_left {
+  float: left;
+}
+
+.header_right {
+  float: right;
+  padding: 1em;
+}
+
+.header_right li {
+  float: right;
+  padding: 0 1em;
+  border-right: 1px solid #fff;
+}
+
+.header_right li:last-child {
+  border-left: 1px solid #fff;
+}
+
+.clear_float {
+  clear: both;
+}
+
+header li a{
+  color: #fff;
+  font-size: 1.5em;
+}

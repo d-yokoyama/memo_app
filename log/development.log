@@ -4550,3 +4550,129 @@ Processing by HomeController#top_view as HTML
 Completed 200 OK in 2447ms (Views: 2394.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/index" for ::1 at 2020-03-09 18:26:00 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (58.0ms)
+Completed 200 OK in 531ms (Views: 420.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:29:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (7.4ms)
+Completed 200 OK in 399ms (Views: 354.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:30:47 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (4.7ms)
+Completed 200 OK in 332ms (Views: 290.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:31:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (31.0ms)
+Completed 200 OK in 371ms (Views: 328.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:32:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (7.2ms)
+Completed 200 OK in 357ms (Views: 310.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:32:39 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (4.9ms)
+Completed 200 OK in 462ms (Views: 406.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:32:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (5.5ms)
+Completed 200 OK in 352ms (Views: 304.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:33:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (7.0ms)
+Completed 200 OK in 363ms (Views: 321.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:38:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (4.6ms)
+Completed 200 OK in 296ms (Views: 252.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:38:33 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (7.3ms)
+Completed 200 OK in 343ms (Views: 301.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:43:50 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (7.2ms)
+Completed 200 OK in 489ms (Views: 445.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:45:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (5.0ms)
+Completed 200 OK in 347ms (Views: 301.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:46:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (8.0ms)
+Completed 200 OK in 342ms (Views: 297.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-09 18:47:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (5.1ms)
+Completed 200 OK in 340ms (Views: 294.2ms | ActiveRecord: 0.6ms)
+
+
