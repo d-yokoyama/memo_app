@@ -14,7 +14,7 @@
  *= require_self
  */
 header {
-  background-color: #d0a34c;
+  background-color: #4cd0b8;
 }
 
 .header_inner {
@@ -39,6 +39,14 @@ header {
 
 .header_right li:last-child {
   border-left: 1px solid #fff;
+}
+
+.header_left {
+  padding: 1em;
+}
+
+.header_left li {
+  padding: 0 1em;
 }
 
 .clear_float {
