@@ -94,3 +94,43 @@ body {
 #create_post {
   background-color: #3d9478;
 }
+
+.top_image img{
+  width: 100%;
+}
+
+.top_image {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.top_image_right {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.top_image_right h1 {
+  margin: 1em;
+}
+
+.top_image_right p {
+  margin: 0.3em;
+  font-weight: bold;
+}
+
+.top_image_signin {
+  display: flex;
+  margin-top: 2em;
+}
+
+.top_image_signin button {
+  padding: 1em;
+  margin: 0 2em;
+  border-radius: 3px;
+}
