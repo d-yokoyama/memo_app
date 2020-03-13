@@ -8136,3 +8136,366 @@ Processing by HomeController#top_view as HTML
 Completed 200 OK in 403ms (Views: 345.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-03-13 17:52:07 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.5ms)
+Completed 200 OK in 343ms (Views: 299.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:52:31 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.6ms)
+Completed 200 OK in 344ms (Views: 296.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:53:22 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (6.3ms)
+Completed 200 OK in 403ms (Views: 360.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:56:30 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.7ms)
+Completed 200 OK in 458ms (Views: 397.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:56:43 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (9.3ms)
+Completed 200 OK in 391ms (Views: 289.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:56:49 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.3ms)
+Completed 200 OK in 325ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:58:04 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (6.0ms)
+Completed 200 OK in 423ms (Views: 376.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:58:45 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.0ms)
+Completed 200 OK in 387ms (Views: 338.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 17:59:08 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (6.4ms)
+Completed 200 OK in 440ms (Views: 380.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 18:01:19 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (8.6ms)
+Completed 200 OK in 377ms (Views: 331.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 20:14:34 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (58.3ms)
+Completed 500 Internal Server Error in 568ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:   </head>
+    12: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_74418540'
+Started GET "/" for ::1 at 2020-03-13 20:17:38 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:   </head>
+    12: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_73585884'
+Started GET "/" for ::1 at 2020-03-13 20:19:06 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_63470820'
+Started GET "/" for ::1 at 2020-03-13 20:22:18 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 1281ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_67066320'
+Started GET "/" for ::1 at 2020-03-13 20:22:28 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_78320808'
+Started GET "/" for ::1 at 2020-03-13 20:25:14 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__326477334_77202768'
+Started GET "/" for ::1 at 2020-03-13 20:27:18 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (3091.5ms)
+Completed 500 Internal Server Error in 3436ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+    1: <body>
+    2:   <div class="top_image">
+    3:     <%= image_tag "top.jpg", alt: "トップ画像" %>
+    4:     <div class="top_image_right">
+    5:       <h1>シンプルなメモアプリ</h1>
+    6:       <p>簡単で便利なメモ帳</p>
+  
+app/assets/javascripts/application.js:16
+app/views/home/top_view.erb:3:in `_app_views_home_top_view_erb___14674526_59739540'
+Started GET "/posts/index" for ::1 at 2020-03-13 20:28:56 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 1253ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/user/sample_app/app/assets/config
+  C:/Users/user/sample_app/app/assets/images
+  C:/Users/user/sample_app/app/assets/javascripts
+  C:/Users/user/sample_app/app/assets/stylesheets
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.1/app/assets/javascripts
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.1/lib/assets/compiled
+  C:/Ruby25/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/user/sample_app/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___507000121_76279176'
+Started GET "/posts/index" for ::1 at 2020-03-13 20:29:27 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (4.7ms)
+Completed 200 OK in 1243ms (Views: 1194.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-13 20:29:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (3.7ms)
+Completed 200 OK in 540ms (Views: 496.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-13 20:29:48 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:4
+  Rendered posts/index.erb within layouts/application (5.5ms)
+Completed 200 OK in 305ms (Views: 260.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 20:29:50 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (7.5ms)
+Completed 200 OK in 276ms (Views: 237.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 20:33:59 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (6.2ms)
+Completed 200 OK in 298ms (Views: 256.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-13 20:34:34 +0900
+Processing by HomeController#top_view as HTML
+  Rendering home/top_view.erb within layouts/application
+  Rendered home/top_view.erb within layouts/application (5.9ms)
+Completed 200 OK in 280ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
