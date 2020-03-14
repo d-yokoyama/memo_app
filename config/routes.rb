@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "posts/:id/show" => "posts#show"
   get "posts/create" => "home#top"
   post "posts/:id/update" => "posts#update"
+
+  post "users/signup" => "users#signup"
 end
