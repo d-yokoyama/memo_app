@@ -20,7 +20,7 @@
     <div class="signup_modal_wrapper">
       <div class="signup_modal">
         <input type="submit" class="modal_close" name="" value="閉じる">
-        <%= form_tag("/users/signup") do %>
+        <%= form_tag("/user/signup") do %>
         <input type="text" name="name" value="" placeholder="ユーザーID" spellcheck="false">
         <input type="text" name="email" value="" placeholder="email" spellcheck="false">
         <input type="password" name="password" value="" placeholder="password">
@@ -33,7 +33,7 @@
     <div class="signup_modal_wrapper">
       <div class="signup_modal">
         <input type="submit" class="modal_close" name="" value="閉じる">
-        <%= form_tag("/users/signin") do %>
+        <%= form_tag("/user/signin") do %>
         <input type="text" name="name" value="" placeholder="ユーザーID" spellcheck="false">
         <input type="password" name="password" value="" placeholder="password">
         <input class="signin_btn" type="submit" name="" value="サインイン">

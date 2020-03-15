@@ -8,4 +8,15 @@ class UsersController < ApplicationController
     @user.save
     redirect_to("/posts/index")
   end
+  def signin
+    @user = User.find_by(
+      name: params[:name],
+      password: params[:password]
+    )
+    if @user
+      redirect_to("/posts/index")
+    else
+      redirect_to("/")
+    end
+  end
 end
