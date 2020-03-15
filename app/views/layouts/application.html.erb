@@ -21,10 +21,14 @@
           <li><%= link_to("新規作成", "/posts/create") %></li>
           <li><%= link_to("メモ一覧", "/posts/index") %></li>
           <li><%= link_to("トップ", "/") %></li>
+          <li><%= link_to("#{session[:name]}") %></li>
         </div>
         <div class="clear_float"></div>
       </div>
     </header>
     <%= yield %>
+    <script type="text/javascript">
+        $('.index_flash').fadeOut(5000);
+    </script>
   </body>
 </html>

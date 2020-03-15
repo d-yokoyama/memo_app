@@ -14,6 +14,8 @@ class UsersController < ApplicationController
       password: params[:password]
     )
     if @user
+      flash[:notice] = "ログインしました"
+      session[:name] = @user.name
       redirect_to("/posts/index")
     else
       redirect_to("/")
