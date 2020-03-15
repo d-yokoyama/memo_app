@@ -18,6 +18,7 @@
           <li><%= link_to "MEMOAPP", "/" %></li>
         </div>
         <div class="header_right">
+          <li><%= link_to("ログアウト", "/user/logout", method: :post) %></li>
           <li><%= link_to("新規作成", "/posts/create") %></li>
           <li><%= link_to("メモ一覧", "/posts/index") %></li>
           <li><%= link_to("トップ", "/") %></li>
@@ -26,9 +27,12 @@
         <div class="clear_float"></div>
       </div>
     </header>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
     <%= yield %>
     <script type="text/javascript">
-        $('.index_flash').fadeOut(5000);
+        $('.flash').fadeOut(5000);
     </script>
   </body>
 </html>

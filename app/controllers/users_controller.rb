@@ -21,4 +21,9 @@ class UsersController < ApplicationController
       redirect_to("/")
     end
   end
+  def logout
+    session[:name] = nil
+    flash[:notice] = "ログアウトしました"
+    redirect_to("/")
+  end
 end

@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   post "user/signup" => "users#signup"
   post "user/signin" => "users#signin"
+  post "user/logout" => "users#logout"
 end
