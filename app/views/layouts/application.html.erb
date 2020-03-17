@@ -8,21 +8,31 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
       <div class="header_inner">
         <div class="header_left">
+          <li><%= link_to "MEMOAPP", "/" %></li>
         </div>
         <div class="header_right">
+          <li><%= link_to("ログアウト", "/user/logout", method: :post) %></li>
           <li><%= link_to("新規作成", "/posts/create") %></li>
           <li><%= link_to("メモ一覧", "/posts/index") %></li>
           <li><%= link_to("トップ", "/") %></li>
+          <li><%= link_to("#{session[:name]}") %></li>
         </div>
         <div class="clear_float"></div>
       </div>
     </header>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
     <%= yield %>
+    <script type="text/javascript">
+        $('.flash').fadeOut(5000);
+    </script>
   </body>
 </html>

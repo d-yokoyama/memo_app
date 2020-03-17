@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get "posts/create" => "home#top"
   post "posts/:id/update" => "posts#update"
   post "posts/:id/destroy" => "posts#destroy"
+
+  post "user/signup" => "users#signup"
+  post "user/signin" => "users#signin"
+  post "user/logout" => "users#logout"
 end
