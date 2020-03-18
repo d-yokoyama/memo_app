@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+ 
 header {
   background-color: #4cd0b8;
 }
