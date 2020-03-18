@@ -1,0 +1,370 @@
+/* reset ================================ */
+/* line 6, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+/* line 16, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 22, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+a {
+  text-decoration: none;
+  color: #2d3133;
+}
+
+/* line 27, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 31, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+button {
+  padding: 0;
+}
+
+/* line 35, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+input {
+  background-color: transparent;
+  outline-width: 0;
+}
+
+/* line 40, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+form input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 44, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+#form {
+  resize: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+/* line 55, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.container {
+  margin: auto;
+  width: 600px;
+  margin-top: 100px;
+}
+
+/* line 61, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.container_inner {
+  border-radius: 10px;
+  padding: 0 30px;
+  background-color: #594a4e;
+}
+
+/* line 67, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.container h1 {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+}
+
+/* line 74, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+#btn {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 81, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+input {
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 0.4em 0.6em;
+}
+
+/* line 88, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+body {
+  margin-bottom: 100px;
+  background-color: #faeee7;
+  margin: 0;
+  padding-bottom: 600px;
+}
+
+/* line 95, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+#create_post {
+  background-color: #4cd0b8;
+}
+
+/* line 99, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* line 104, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* line 110, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image_right {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* line 120, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image_right h1 {
+  margin: 1em;
+}
+
+/* line 124, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image_right p {
+  margin: 0.3em;
+  font-weight: bold;
+}
+
+/* line 129, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image_signin {
+  display: flex;
+  margin-top: 2em;
+}
+
+/* line 134, C:/Users/user/sample_app/app/assets/stylesheets/home.scss */
+.top_image_signin button {
+  padding: 1em;
+  margin: 0 2em;
+  border-radius: 3px;
+  outline: none;
+}
+/* line 1, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.signup_modal_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.signup_modal {
+  width: 570px;
+  background-color: #4cd0b8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6em 0;
+}
+
+/* line 23, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.signup_modal input {
+  color: black;
+  margin: 0.5em 0;
+  background-color: #f2f2f2;
+}
+
+/* line 29, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.modal_show {
+  display: none;
+}
+
+/* line 33, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.signup_modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 38, C:/Users/user/sample_app/app/assets/stylesheets/modal.scss */
+.signin_modal_show {
+  display: none;
+}
+/* line 4, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+.post_container {
+  width: 500px;
+  margin: 100px auto;
+}
+
+/* line 9, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+#post_index {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #d0a34c;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 17, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+.show_container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* line 22, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+.show_content {
+  margin-top: 200px;
+  background-color: #fff;
+  width: 100%;
+  padding: 1em;
+  height: 300px;
+  font-size: 1.4em;
+  border: 1px solid #d0a34c;
+  outline: none;
+  resize: none;
+}
+
+/* line 34, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+#update_btn {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* line 39, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+#update_submit {
+  background-color: #4cd0b8;
+}
+
+/* line 43, C:/Users/user/sample_app/app/assets/stylesheets/posts.scss */
+#post_right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+header {
+  background-color: #4cd0b8;
+}
+
+.header_inner {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+.header_left {
+  float: left;
+}
+
+.header_right {
+  float: right;
+  padding: 1em;
+}
+
+.header_right li {
+  float: right;
+  padding: 0 1em;
+  border-left: 1px solid #fff;
+}
+
+.header_right li:first-child {
+  border-right: 1px solid #fff;
+}
+
+.header_left {
+  padding: 1em;
+}
+
+.header_left li {
+  padding: 0 1em;
+}
+
+.clear_float {
+  clear: both;
+}
+
+header li a{
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.flash {
+  background: #696969;
+  color: #fff;
+  text-align: center;
+  float:left;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+footer {
+  background-color: #4cd0b8;
+  color: #fff;
+}
+
+.footer_wrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.footer_top {
+  padding: 1em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer_bottom {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.follow_icon {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.share {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.share_ion {
+  display: flex;
+  justify-content: flex-start;
+}
