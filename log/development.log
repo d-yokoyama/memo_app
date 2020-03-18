@@ -9940,3 +9940,19 @@ Processing by HomeController#top_view as HTML
 Completed 200 OK in 4896ms (Views: 4833.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/create" for ::1 at 2020-03-18 10:15:53 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 828ms (Views: 738.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-18 10:15:56 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:5
+  Rendered posts/index.erb within layouts/application (62.0ms)
+Completed 200 OK in 400ms (Views: 325.9ms | ActiveRecord: 4.4ms)
+
+
