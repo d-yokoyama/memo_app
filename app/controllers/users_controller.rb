@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     )
     if @user
       flash[:notice] = "ログインしました"
+      session[:user_id] = @user.id
       session[:name] = @user.name
       redirect_to("/posts/index")
     else
@@ -22,6 +23,7 @@ class UsersController < ApplicationController
     end
   end
   def logout
+    session[:user_id] = nil
     session[:name] = nil
     flash[:notice] = "ログアウトしました"
     redirect_to("/")
