@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+ 
 header {
   background-color: #4cd0b8;
 }
@@ -78,4 +81,46 @@ footer {
   width: 90%;
   margin: auto;
   max-width: 1280px;
+}
+
+.footer_top {
+  padding: 1.5em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer_bottom {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.follow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.follow_icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1em;
+}
+
+.follow_icon li {
+  margin-left: 1em;
+}
+
+.share {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.share_ion {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer_left {
+  font-size: 1.5em;
 }
