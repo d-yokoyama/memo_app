@@ -45,6 +45,15 @@ header {
   border-right: 1px solid #fff;
 }
 
+#session_name {
+  border-left: none;
+}
+
+#session_name a {
+  color: #f09199; 
+
+}
+
 .header_left {
   padding: 1em;
 }
