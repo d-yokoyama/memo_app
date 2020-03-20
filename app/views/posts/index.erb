@@ -5,7 +5,7 @@
       <% @posts.each do |post| %>
         <div id="post_index">
           <div id="post_left">
-            <%= link_to(post.content, "/posts/#{post.id}/show") %>
+            <%= link_to(simple_format(post.content), "/posts/#{post.id}/show") %>
           </div>
           <div id="post_right">
             <%= link_to("削除", "/posts/#{post.id}/destroy", method: :post) %>
