@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   post "user/logout" => "users#logout"
 
   post "guest/login" => "guests#login"
+  get "guest/:id/show" => "guests#show"
+  post "guest/:id/update" => "guests#update"
 end
