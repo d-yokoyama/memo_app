@@ -18,6 +18,7 @@
           <li><%= link_to "MEMOAPP", "/" %></li>
         </div>
         <div class="header_right">
+          <li><%= link_to("ゲスト", "/guest/login", method: :post) %></li>
           <li><%= link_to("ログアウト", "/user/logout", method: :post) %></li>
           <li><%= link_to("新規作成", "/posts/create") %></li>
           <li><%= link_to("メモ一覧", "/posts/index") %></li>
