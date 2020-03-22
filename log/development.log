@@ -16706,3 +16706,981 @@ puma (3.12.3) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   ↳ bin/rails:4
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:4
+Started GET "/" for ::1 at 2020-03-22 13:55:22 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 358ms (Views: 297.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 13:55:24 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"IDnGJrrpS9/yXW/GNIuviZ3dMYsfs2OdZUJGya8WpztKo/IajDxdW10V+qmmFAXiOcjYUdYkjuwo74IksaUfIw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 13:55:24 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 366ms (Views: 320.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 13:58:36 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 342ms (Views: 284.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 13:58:38 +0900
+  
+SyntaxError (C:/Users/user/sample_app/app/controllers/guests_controller.rb:5: syntax error, unexpected ']'
+    session[name:] = guest
+                 ^):
+  
+app/controllers/guests_controller.rb:5: syntax error, unexpected ']'
+Started GET "/" for ::1 at 2020-03-22 14:00:06 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 350ms (Views: 287.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:00:09 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"FUkEYnYGwF/PPL8yuJ/9hNcZSa8aFS2PDEATjMh4iWJ/0zBeQNPW22B0Kl0qAFfvcwygddOCwP5B7ddh1ssxeg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (2.8ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:00:09.337511"], ["updated_at", "2020-03-22 05:00:09.337511"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:00:09 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 340ms (Views: 293.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:00:55 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 333ms (Views: 274.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:00:59 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"clE2/lwvZc6dA0VjqE2sVgcnr+3VNcibGUep2jFgcdsYywLCavpzSjJL0Aw60gY9ozJGNxyiJepU6m03L9PJww=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.0ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:00:59.184617"], ["updated_at", "2020-03-22 05:00:59.184617"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:00:59 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 323ms (Views: 276.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:01:09 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:5
+  Rendered posts/index.erb within layouts/application (4.3ms)
+Completed 200 OK in 374ms (Views: 277.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:13:12 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 338ms (Views: 278.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:13:16 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"v2TEVDfBT3dCq9D+fuhaka0l7fbn+ZSFwUmU8qTMvafV/vBoARRZ8+3jRZHsd/D6CTAELC5uefSM5FAfun8Fvw=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.1ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:13:16.998262"], ["updated_at", "2020-03-22 05:13:16.998262"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 42ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:13:17 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.erb:5
+  Rendered posts/index.erb within layouts/application (3.8ms)
+Completed 200 OK in 337ms (Views: 282.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:27:31 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 365ms (Views: 304.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:27:35 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"gVMwE+AgYtoRPvVtOIqXOX6cjqCqdOIeh3fMsOz7pzrryQQv1vV0Xr52YAKqFT1S2olnemPjD2/K2ghd8kgfIg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (1.6ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:27:36.058015"], ["updated_at", "2020-03-22 05:27:36.058015"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 31ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:27:36 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" IS NULL ORDER BY "posts"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.erb within layouts/application (934.5ms)
+Completed 500 Internal Server Error in 1122ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `guest' for #<#<Class:0x0749c5c8>:0x07497570>):
+    2: 
+    3:   <div class="post_container">
+    4:     <div>
+    5:     <% if session[:name] = guest %>
+    6:       <%= "ゲスト" %>
+    7:     <% else %>
+    8:       <% @posts.each do |post| %>
+  
+app/views/posts/index.erb:5:in `_app_views_posts_index_erb__967818060_61138284'
+Started GET "/" for ::1 at 2020-03-22 14:29:59 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 410ms (Views: 364.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:30:02 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"cEy/GavmAoNC9k9WGT8KWXZnwsTQnMA5KRqOdpcIPm8a1oslnTMUB+2+2jmLoKAy0nIrHhkLLUhkt0qbibuGdw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (2.6ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:30:02.363655"], ["updated_at", "2020-03-22 05:30:02.363655"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 16ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:30:02 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (1.3ms)
+Completed 200 OK in 383ms (Views: 332.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:30:29 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (1.0ms)
+Completed 200 OK in 305ms (Views: 261.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:30:35 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"xpw+EH33FE3ZHZ+/WEASIrEoPZlm2FBGL3dpvFkpgfWsBgosSyICyXZVCtDK37hJFT3UQ69PvTdi2q1RR5o57Q=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:30:35 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 336ms (Views: 289.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:30:39 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0LXojX/1yaapHN7kcsLc7xDjWkX4vZHMUHQX/FFl1026L9yxSSDfIgZUS4vgXXaEtPaznzEqfL0d2dMRT9ZvVQ==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 41ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:30:39 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 325ms (Views: 278.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:31:06 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"5VbB8pi80i7Saxi4hFLTDJKfvFkUFOG855oz/izRq7CPzPXOrmnEqn0jjdcWzXlnNopVg92DDM2qN/cTMmITqA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:31:07 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 348ms (Views: 302.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:31:11 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D+e3/oA0KgpS7J4RLIpAs1DuWMLXWjBL+UZDd5EyoOJlfYPCtuE8jv2kC36+FerY9PuxGB7N3Tq064eaj4EY+g==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:31:11 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 322ms (Views: 272.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:34:16 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 340ms (Views: 294.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:34:19 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"RZ8eCuKV3g2Qp3Z5PU8Nu6TPbBif1adX9sgHt3zQ8esvBSo21EDIiT/v4xav0KfQANqFwlZCSia7ZcNaYmNJ8w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.1ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:34:19.818183"], ["updated_at", "2020-03-22 05:34:19.818183"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 23ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:34:19 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (0.9ms)
+Completed 200 OK in 348ms (Views: 300.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:34:22 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"BIDQSDtejGQ07X6Zonphzt2kdwmV/VBo4jxogXDOMIduGuR0DYua4Jul6/Yw5culebGe01xqvRmvkaxsbn2Inw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:34:22 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 325ms (Views: 279.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:34:27 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fETMmrGBjfyJiapIOFiSEsHhROqN8iJUdVrTCH57zsQW3vimh1SbeCbBPyeqxzh5ZfStMERlzyU49xflYMh23A==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:34:27 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ? ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/posts/index.erb:8
+  Rendered posts/index.erb within layouts/application (49.9ms)
+Completed 200 OK in 373ms (Views: 325.2ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:34:32 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"SfiJeIOvMwkxefFuC97cuZ+ALi8DGD1civwxkCXWE3UjYr1EtXoljZ4xZAGZQXbSO5XH9cqP0C3HUfV9O2WrbQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:34:33 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 341ms (Views: 284.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:39:39 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 436ms (Views: 359.6ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:39:41 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"diUs31RK+LtM046s/fAESxwpr9AvTfOetgr+3/wnBgAcvxjjYp/uP+ObG8Nvb64guDxGCubaHu/7pzoy4pS+GA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (1.7ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:39:41.892749"], ["updated_at", "2020-03-22 05:39:41.892749"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 35ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:39:41 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (0.9ms)
+Completed 200 OK in 336ms (Views: 275.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:41:57 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 346ms (Views: 276.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:42:03 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"4zrQ+ttoo/y7fKrzd4f4hir9msXCRs8AzbVrZCFeTuuJoOTG7b21eBQ0P5zlGFLtjuhzHwvRInGAGK+JP+328w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:42:03 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 336ms (Views: 290.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:42:07 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8PRBKkHJGYOFcQj3BZueVg9YOFZC1jXVLV5hUVhgH9KabnUWdxwPByo5nZiXBDQ9q03RjItB2KRg86W8RtOnyg==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 16ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:42:08 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ? ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/posts/index.erb:8
+  Rendered posts/index.erb within layouts/application (14.4ms)
+Completed 200 OK in 347ms (Views: 286.0ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:42:10 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"ITVxI+tusRfobjvporrVjiofbusG6HCMhW9xWcCgUUxLr0Uf3bunk0cmroYwJX/ljgqHMc9/nf3IwrW03hPpVA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:42:11 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 330ms (Views: 284.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:42:12 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"6IpNb7oI+JLkzWNvNF5bkAVs8AhmFIWVZ7gHH26VeKqCEHlTjN3uFkuF9gCmwfH7oXkZ0q+DaOQqFcPycCbAsg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.3ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:42:13.005902"], ["updated_at", "2020-03-22 05:42:13.005902"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 25ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:42:13 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  Rendered posts/index.erb within layouts/application (1.0ms)
+Completed 200 OK in 323ms (Views: 277.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:42:51 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"YVL4EfiVqq7ZIWQipO6Uq5i5t3GuHgs36D4MVVsASCMLyMwtzkC8KnZp8U02cT7APKxeq2eJ5kalk8i4RbPwOw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:42:51 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 326ms (Views: 280.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:42:53 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"Alx6OETBmkhZchv3y35gcexZu+0EwErg5xdocn93Kk5oxk4EchSMzPY6jphZ4coaSExSN81Xp5GquqyfYcSSVg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (2.2ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:42:53.575611"], ["updated_at", "2020-03-22 05:42:53.575611"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 20ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:42:53 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby25/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.erb within layouts/application (62.1ms)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Guest::ActiveRecord_Relation:0x08718be8>
+Did you mean?  connection):
+    3:   <div class="post_container">
+    4:     <div>
+    5:     <% if session[:name] == "guest" %>
+    6:       <%= @guest_content.content %>
+    7:     <% else %>
+    8:       <% @posts.each do |post| %>
+    9:         <div id="post_index">
+  
+app/views/posts/index.erb:6:in `_app_views_posts_index_erb__967818060_70549272'
+Started POST "/user/logout" for ::1 at 2020-03-22 14:43:04 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"Alx6OETBmkhZchv3y35gcexZu+0EwErg5xdocn93Kk5oxk4EchSMzPY6jphZ4coaSExSN81Xp5GquqyfYcSSVg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:43:09 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 438ms (Views: 392.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:46:16 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 342ms (Views: 296.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:46:18 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"98Odqw5rlJxrpDeHrP1nrQ/FTbQb9fqzSbmkK48yKUOdWamXOL6CGMTsoug+Ys3Gq9CkbtJiF8IEFGDGkYGRWw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (1.5ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:46:18.717922"], ["updated_at", "2020-03-22 05:46:18.717922"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 16ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:46:18 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (5.3ms)
+Completed 200 OK in 340ms (Views: 288.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:47:20 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"Nw1aOXFT17TbqoatQkfNnEaYv1Y4ENAx77xRXExQ219dl24FR4bBMHTiE8LQ2Gf34o1WjPGHPUCiEZWxUuNjRw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (2.5ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:47:20.960772"], ["updated_at", "2020-03-22 05:47:20.960772"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 15ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:47:20 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (4.2ms)
+Completed 200 OK in 328ms (Views: 280.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:50:29 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 318ms (Views: 274.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:50:31 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"Vl2t2wSsFlkPE0q+smYBt8bCozYc5SRCj59L0AIyUXY8x5nnMnkA3aBb39Eg+avcYtdK7NVyyTPCMo89HIHpbg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.2ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:50:31.933499"], ["updated_at", "2020-03-22 05:50:31.933499"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 17ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:50:31 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (9.4ms)
+Completed 200 OK in 334ms (Views: 284.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:50:39 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 341ms (Views: 295.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:50:42 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cM7AqgvvNPR+1X7Coix8e5BwMOhNrvyPzp0eHU+MTdK5tKxPpmncwyN563fQI/gW10Dn3sJ9BnEDBMhG0//VVw==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:50:42 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ? ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/posts/index.erb:17
+  Rendered posts/index.erb within layouts/application (5.6ms)
+Completed 200 OK in 323ms (Views: 278.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:51:03 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"ZqVZ9lNSE6vusQH4ixyauiQOn83YdK85HMcPpAEsMxEMP23KZYcFL0H5lJcZgzDRgBt2FxHjQkhRastJH5+LCQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (3.4ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:51:03.252155"], ["updated_at", "2020-03-22 05:51:03.252155"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 21ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:51:03 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (9.6ms)
+Completed 200 OK in 346ms (Views: 302.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:52:08 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (9.1ms)
+Completed 200 OK in 4970ms (Views: 4927.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:52:13 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (14.8ms)
+Completed 200 OK in 487ms (Views: 430.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/user/logout" for ::1 at 2020-03-22 14:52:18 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"TIoyD5D3glsWdaxNc+lDvUZk3CDNZlin9Pq0MApvKQQmEAYzpiKU37k9OSLhdunW4nE1+gTxtda5V3DdFNyRHA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 14:52:18 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 331ms (Views: 285.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/signin" for ::1 at 2020-03-22 14:52:21 +0900
+Processing by UsersController#signin as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tp2kgsQuvVtj21+4gqU0p2mE1+aU7awu6H1nWfDBxoDcB5C+8vur38yTytcQOp7MzZE+PF16QV+l0KO07nJ+mA==", "name"=>"yoko", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "yoko"], ["password", 45], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:52:21 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ? ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/posts/index.erb:17
+  Rendered posts/index.erb within layouts/application (5.8ms)
+Completed 200 OK in 344ms (Views: 299.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 14:52:31 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"YBVuKyHkxesxMW1fzC5EhErCdleo2XECXwkCPR2JRFwKj1oXFzHTb555+DBese7v7tefjWFOnHMSpMbQAzr8RA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[36mGuest Create (1.8ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 05:52:31.642932"], ["updated_at", "2020-03-22 05:52:31.642932"]]
+  ↳ app/controllers/guests_controller.rb:4
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:4
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 15ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 14:52:31 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (10.0ms)
+Completed 200 OK in 327ms (Views: 282.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mGuest Load (9.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mGuest Load (0.8ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mGuest Load (0.9ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (2.1ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 2]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.7ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.8ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 4]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.4ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 5]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (2.0ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 6]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (2.4ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 7]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.6ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 8]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.6ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.5ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.4ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 11]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (2.4ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 12]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.6ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 13]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.7ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 14]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGuest Destroy (1.5ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-03-22 15:05:28 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 405ms (Views: 331.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-22 15:05:33 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"b0goEq6M4JIVnRJ2GIROLPKLz0/z7o1pW2/Qfd/Vc6YF0hwumFn2FrrVhxmKG+RHVp4mlTp5YBgWwhSQwWbLvg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/guests_controller.rb:3:in `login'
+Started POST "/guest/login" for ::1 at 2020-03-22 15:06:08 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"b0goEq6M4JIVnRJ2GIROLPKLz0/z7o1pW2/Qfd/Vc6YF0hwumFn2FrrVhxmKG+RHVp4mlTp5YBgWwhSQwWbLvg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (3.9ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-22 06:06:08.726968"], ["updated_at", "2020-03-22 06:06:08.726968"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 60ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 15:06:08 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (4.8ms)
+Completed 200 OK in 353ms (Views: 296.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-03-22 15:50:06 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 425ms (Views: 374.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-22 15:53:37 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.8ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (7.7ms)
+Completed 200 OK in 359ms (Views: 309.6ms | ActiveRecord: 1.3ms)
+
+
