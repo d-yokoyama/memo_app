@@ -1,0 +1,12 @@
+<body>
+  <div class="show_container">
+    <%= form_tag("/posts/#{@post.id}/update") do %>
+      <div>
+        <textarea class="show_content" name="content" rows="8" cols="80"  spellcheck="false"><%= @post.content %></textarea>
+      </div>
+      <div id="update_btn">
+        <input id="update_submit" type="submit" name="" value="保存">
+      </div>
+    <% end %>
+  </div>
+</body>

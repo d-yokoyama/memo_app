@@ -1,0 +1,59 @@
+<body>
+  
+  <div class="top_image">
+    <%= image_tag "top.jpg", alt: "トップ画像" %>
+    <div class="top_image_right">
+      <h1>SIMPLE IS BEST</h1>
+      <p>簡単で便利なメモ帳</p>
+      <p>機能は保存と削除だけ</p>
+      <p>ユーザー登録して使ってみましょう</p>
+      <div class="top_image_signin">
+        <div class="signup">
+          <%= button_tag "新規登録" %>
+        </div>
+        <div class="signin_btn">
+          <%= button_tag "ログイン" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal_show">
+    <div class="signup_modal_wrapper">
+      <div class="signup_modal">
+        <input type="submit" class="modal_close" name="" value="閉じる">
+        <%= form_tag("/user/signup") do %>
+        <input type="text" name="name" value="" placeholder="ユーザーID" spellcheck="false">
+        <input type="text" name="email" value="" placeholder="email" spellcheck="false">
+        <input type="password" name="password" value="" placeholder="password">
+        <input id="send_btn" type="submit" name="" value="登録">
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="signin_modal_show">
+    <div class="signup_modal_wrapper">
+      <div class="signup_modal">
+        <input type="submit" class="modal_close" name="" value="閉じる">
+        <%= form_tag("/user/signin") do %>
+        <input type="text" name="name" value="" placeholder="ユーザーID" spellcheck="false">
+        <input type="password" name="password" value="" placeholder="password">
+        <input class="signin_btn" type="submit" name="" value="ログイン">
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.signup').on('click', ()=> {
+      $('.modal_show').fadeIn();
+    });
+    $('.modal_close').on('click', ()=> {
+      $('.modal_show',).fadeOut();
+    });
+    $('.signin_btn').on('click', ()=> {
+      $('.signin_modal_show').fadeIn();
+    });
+    $('.modal_close').on('click', ()=> {
+      $('.signin_modal_show').fadeOut();
+    })
+  </script>
+</body>
