@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def signup
     flash[:notice] = "新規登録しました"
-    session[:user_id] = params[:id]
     session[:name] = params[:name]
     @user = User.new(
       name: params[:name],
@@ -9,6 +8,7 @@ class UsersController < ApplicationController
       password: params[:password]
     )
     @user.save
+    session[:user_id] = @user.id
     redirect_to("/posts/create")
   end
   def signin
