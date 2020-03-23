@@ -12,4 +12,9 @@ Rails.application.routes.draw do
   post "user/signup" => "users#signup"
   post "user/signin" => "users#signin"
   post "user/logout" => "users#logout"
+
+  post "guest/login" => "guests#login"
+  get "guest/:id/show" => "guests#show"
+  post "guest/:id/update" => "guests#update"
+  post "guest/:id/destroy" => "guests#destroy"
 end

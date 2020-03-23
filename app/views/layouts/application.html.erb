@@ -18,11 +18,12 @@
           <li><%= link_to "MEMOAPP", "/" %></li>
         </div>
         <div class="header_right">
+          <li><%= link_to("ゲスト", "/guest/login", method: :post) %></li>
           <li><%= link_to("ログアウト", "/user/logout", method: :post) %></li>
           <li><%= link_to("新規作成", "/posts/create") %></li>
           <li><%= link_to("メモ一覧", "/posts/index") %></li>
           <li><%= link_to("トップ", "/") %></li>
-          <li><%= link_to("#{@current_user.name}") %></li>
+          <li id="session_name"><%= link_to("#{session[:name]}") %></li>
         </div>
         <div class="clear_float"></div>
       </div>
@@ -61,8 +62,5 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
-        $('.flash').fadeOut(5000);
-    </script>
   </body>
 </html>

@@ -1,9 +1,13 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all.order(created_at: :desc)
+    @posts = Post.where(user_id: session[:user_id]).order(created_at: :desc)
+    @guest_content = Guest.all
   end
   def create
-    @post = Post.new(content: params[:name])
+    @post = Post.new(
+      content: params[:name],
+      user_id: session[:user_id]
+    )
     @post.save
     redirect_to("/posts/index")
   end

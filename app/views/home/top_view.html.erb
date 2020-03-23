@@ -3,7 +3,7 @@
   <div class="top_image">
     <%= image_tag "top.jpg", alt: "トップ画像" %>
     <div class="top_image_right">
-      <h1>シンプルなメモアプリ</h1>
+      <h1>SIMPLE IS BEST</h1>
       <p>簡単で便利なメモ帳</p>
       <p>機能は保存と削除だけ</p>
       <p>ユーザー登録して使ってみましょう</p>
@@ -12,7 +12,7 @@
           <%= button_tag "新規登録" %>
         </div>
         <div class="signin_btn">
-          <%= button_tag "サインイン" %>
+          <%= button_tag "ログイン" %>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
         <%= form_tag("/user/signin") do %>
         <input type="text" name="name" value="" placeholder="ユーザーID" spellcheck="false">
         <input type="password" name="password" value="" placeholder="password">
-        <input class="signin_btn" type="submit" name="" value="サインイン">
+        <input class="signin_btn" type="submit" name="" value="ログイン">
         <% end %>
       </div>
     </div>

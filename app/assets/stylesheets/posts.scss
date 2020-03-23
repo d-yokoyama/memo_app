@@ -4,9 +4,10 @@
 .post_container {
   width: 500px;
   margin: 100px auto;
+  min-height: 500px;
 }
 
-#post_index {
+.post_index {
   background-color: #fff;
   padding: 1em;
   border: 1px solid rgb(208, 163, 76);
@@ -16,11 +17,11 @@
 
 .show_container {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .show_content {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: #fff;
   width: 100%;
   padding: 1em;
@@ -40,7 +41,7 @@
   background-color: #4cd0b8;
 }
 
-#post_right {
+.post_right {
   flex-shrink: 0;
   display: flex;
   align-items: center;
