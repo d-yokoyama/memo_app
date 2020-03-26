@@ -20179,3 +20179,342 @@ puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
 puma (3.12.4) lib/puma/server.rb:476:in `process_client'
 puma (3.12.4) lib/puma/server.rb:334:in `block in run'
 puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-26 14:27:55 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 380ms (Views: 327.0ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-26 14:27:59 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"7bzqEB28xiePu609ab3QY2by1CLpB/IGZOsOCk/HV9UX/fbywyvSYIppoyJvQdNnACVYGwG4bm7r4za1it4yQQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[36mGuest Destroy (4.6ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (21.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[36mGuest Destroy (2.9ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (21.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (7.7ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-26 05:27:59.980471"], ["updated_at", "2020-03-26 05:27:59.980471"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (34.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 182ms (ActiveRecord: 96.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:28:00 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (5.8ms)
+Completed 200 OK in 365ms (Views: 314.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/guest/32/destroy" for ::1 at 2020-03-26 14:28:05 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/guest/32/destroy"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-26 14:33:03 +0900
+Processing by HomeController#top_view as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering home/top_view.html.erb within layouts/application
+  Rendered home/top_view.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 352ms (Views: 299.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-26 14:33:06 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"i8sIyf2Grc9/wQHKHSXCl7iyzP/FkKnKyLSAu/vEnHxxihQrIxG5iHoTD9Ub2cGT3mVAxi0vNaJHvLgEPt356A=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[36mGuest Destroy (4.4ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (30.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (2.1ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-26 05:33:06.199242"], ["updated_at", "2020-03-26 05:33:06.199242"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (22.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 114ms (ActiveRecord: 62.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:33:06 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (8.0ms)
+Completed 200 OK in 370ms (Views: 308.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/guest/33/destroy" for ::1 at 2020-03-26 14:33:09 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/guest/33/destroy"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/guest/login" for ::1 at 2020-03-26 14:34:37 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"koH4fxTCz/NypPyJBRxMsqG1hs+qXUyQ0TlghSQC9BhowOSdylXbtHd28pYD4E+2x2IK9kLi0PheMVg64RuRjA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[36mGuest Destroy (3.9ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 33]]
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (6.2ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-26 05:34:37.417063"], ["updated_at", "2020-03-26 05:34:37.417063"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (18.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 138ms (ActiveRecord: 50.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:34:37 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (7.8ms)
+Completed 200 OK in 415ms (Views: 328.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/guest/34/destroy" for ::1 at 2020-03-26 14:34:39 +0900
+  
+ActionController::RoutingError (uninitialized constant GuestController):
+  
+activesupport (5.2.4.2) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.2) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/guest/login" for ::1 at 2020-03-26 14:35:54 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"CqRaS9axeN7kmc8CfSOhYvvrKyLaxPx40X1biOPAz77w5UapCCZsmeFLwR1736JmnTynGzJ7YBBedWM3JtmqKg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[36mGuest Destroy (4.0ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 34]]
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (2.8ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-26 05:35:55.017475"], ["updated_at", "2020-03-26 05:35:55.017475"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (26.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 133ms (ActiveRecord: 55.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:35:55 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (4.4ms)
+Completed 200 OK in 381ms (Views: 314.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/guest/35/destroy" for ::1 at 2020-03-26 14:35:57 +0900
+Processing by GuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uBEsk514vgAbqDUih9D/y1Kdn4lQ7QbC5dCef6eDUOtCUDBxQ++qRx56Oz2BLPzPNEoTsLhSmqpq2KbAYpo1fw==", "id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (1.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/guests_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:21
+  [1m[36mGuest Destroy (4.7ms)[0m  [1m[31mDELETE FROM "guests" WHERE "guests"."id" = ?[0m  [["id", 35]]
+  ↳ app/controllers/guests_controller.rb:21
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:22
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/guests_controller.rb:22
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 61ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:35:57 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (4.9ms)
+Completed 200 OK in 354ms (Views: 305.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/guest/login" for ::1 at 2020-03-26 14:35:59 +0900
+Processing by GuestsController#login as HTML
+  Parameters: {"authenticity_token"=>"E+dYNqVbroXVha2Uz11hEfSls0MSTAntlgvmYf7M5FbppkTUe8y6wtBXo4vJoWIVknI/evrzlYUZA97eO9WBwg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/controllers/guests_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[36mGuest Create (5.2ms)[0m  [1m[32mINSERT INTO "guests" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ゲストログインしました"], ["created_at", "2020-03-26 05:35:59.990807"], ["updated_at", "2020-03-26 05:35:59.990807"]]
+  ↳ app/controllers/guests_controller.rb:5
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guests_controller.rb:5
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 50ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-03-26 14:36:00 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering posts/index.erb within layouts/application
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  ↳ app/views/posts/index.erb:6
+  Rendered posts/index.erb within layouts/application (5.5ms)
+Completed 200 OK in 346ms (Views: 298.1ms | ActiveRecord: 0.9ms)
+
+
