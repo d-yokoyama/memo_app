@@ -16,4 +16,10 @@ class GuestsController < ApplicationController
     post.save
     redirect_to("/posts/index")
   end
+  def destroy
+    post = Guest.find_by(id: params[:id])
+    post.destroy
+    post.save
+    redirect_to("/posts/index")
+  end
 end
