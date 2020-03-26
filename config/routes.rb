@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   post "guest/login" => "guests#login"
   get "guest/:id/show" => "guests#show"
   post "guest/:id/update" => "guests#update"
+  post "guest/:id/destroy" => "guests#destroy"
 end

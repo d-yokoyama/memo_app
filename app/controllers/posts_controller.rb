@@ -4,21 +4,38 @@ class PostsController < ApplicationController
     @guest_content = Guest.all
   end
   def create
-    @post = Post.new(
-      content: params[:name],
-      user_id: session[:user_id]
-    )
-    @post.save
-    redirect_to("/posts/index")
+    if session[:name] == "guest"
+      @post = Guest.new(content: params[:name])
+      @post.save
+      redirect_to("/posts/index")
+    else
+      @post = Post.new(
+        content: params[:name],
+        user_id: session[:user_id]
+      )
+      @post.save
+      redirect_to("/posts/index")
+    end
   end
   def show
-    @post = Post.find_by(id: params[:id])
+    if session[:name] == "guest"
+      @post = Guest.find_by(id: params[:id])
+    else
+      @post = Post.find_by(id: params[:id])
+    end
   end
   def update
-    @post = Post.find_by(id: params[:id])
-    @post.content = params[:content]
-    @post.save
-    redirect_to("/posts/index")
+    if session[:name] == "guest"
+      @post = Guest.find_by(id: params[:id])
+      @post.content = params[:content]
+      @post.save
+      redirect_to("/posts/index")
+    else
+      @post = Post.find_by(id: params[:id])
+      @post.content = params[:content]
+      @post.save
+      redirect_to("/posts/index")
+    end
   end
   def destroy
     @post = Post.find_by(id: params[:id])
