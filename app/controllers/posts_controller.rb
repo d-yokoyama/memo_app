@@ -4,12 +4,18 @@ class PostsController < ApplicationController
     @guest_content = Guest.all
   end
   def create
-    @post = Post.new(
-      content: params[:name],
-      user_id: session[:user_id]
-    )
-    @post.save
-    redirect_to("/posts/index")
+    if session[:name] == "guest"
+      @post = Guest.new(content: params[:name])
+      @post.save
+      redirect_to("/posts/index")
+    else
+      @post = Post.new(
+        content: params[:name],
+        user_id: session[:user_id]
+      )
+      @post.save
+      redirect_to("/posts/index")
+    end
   end
   def show
     if session[:name] == "guest"
