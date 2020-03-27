@@ -20,11 +20,8 @@ class UsersController < ApplicationController
     end
   end
   def signin
-    @user = User.find_by(
-      name: params[:name],
-      password: params[:password]
-    )
-    if @user
+    @user = User.find_by(name: params[:name])
+    if @user && @user.authenticate(params[:password])
       flash[:notice] = "ログインしました"
       session[:user_id] = @user.id
       session[:name] = @user.name
