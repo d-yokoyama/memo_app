@@ -39,35 +39,6 @@ RSpec.describe User, type: :model do
     expect(user).not_to be_valid
   end
 
-  #ユーザーIDが重複してたら登録できない
-  it "ユーザーIDが重複してないか" do
-    user1 = User.new(
-      name: "tanaka",
-      email: "tanaka.com",
-      password: 1111
-    )
-    user2 = User.new(
-      name: "tanaka",
-      email: "satou.com",
-      password: 2222
-    )
-    expect(user2).not_to be_valid
-  end
-  #emailが重複してたら登録できない
-  it "emailが重複してたら登録できない" do
-    user1 = User.new(
-      name: "tanaka",
-      email: "tanaka.com",
-      password: 1111
-    )
-    user2 = User.new(
-      name: "satou",
-      email: "tanaka.com",
-      password: 2222
-    )
-    expect(user2).not_to be_valid
-  end
-
   #passwordが暗号化されているか
   it "passwordが暗号化されているか" do
     user = User.new(
