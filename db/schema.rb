@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_21_074341) do
+ActiveRecord::Schema.define(version: 2020_03_27_131159) do
 
   create_table "guests", force: :cascade do |t|
     t.string "content"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_03_21_074341) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "password"
+    t.string "password_digest"
   end
 
 end
