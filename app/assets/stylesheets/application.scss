@@ -15,7 +15,7 @@
  */
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
- 
+
 header {
   background-color: #4cd0b8;
 }
@@ -24,14 +24,16 @@ header {
   max-width: 1280px;
   width: 90%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_left {
-  float: left;
+  font-size: 1.2em;
 }
 
 .header_right {
-  float: right;
   padding: 1em;
 }
 
@@ -39,6 +41,9 @@ header {
   float: right;
   padding: 0 1em;
   border-left: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .header_right li:first-child {
@@ -50,7 +55,7 @@ header {
 }
 
 #session_name a {
-  color: #f09199; 
+  color: #f09199;
 
 }
 
@@ -68,7 +73,6 @@ header {
 
 header li a{
   color: #fff;
-  font-size: 1.2em;
 }
 
 .flash {
@@ -109,6 +113,7 @@ footer {
 .follow {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .follow_icon {
@@ -119,6 +124,7 @@ footer {
 
 .follow_icon li {
   margin-left: 1em;
+  font-size: 1.4em;
 }
 
 .share {
