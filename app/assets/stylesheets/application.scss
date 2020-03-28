@@ -15,7 +15,7 @@
  */
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
- 
+
 header {
   background-color: #4cd0b8;
 }
@@ -39,6 +39,9 @@ header {
   float: right;
   padding: 0 1em;
   border-left: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .header_right li:first-child {
@@ -50,7 +53,7 @@ header {
 }
 
 #session_name a {
-  color: #f09199; 
+  color: #f09199;
 
 }
 
@@ -68,7 +71,6 @@ header {
 
 header li a{
   color: #fff;
-  font-size: 1.2em;
 }
 
 .flash {
